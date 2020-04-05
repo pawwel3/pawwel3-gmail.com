@@ -1,3 +1,3 @@
 import React from "react";
-const Name = () => <h1>NAzwa Artykułu</h1>;
+const Name = props => <h1>{props.n.toUpperCase()}</h1>;
 export default Name;

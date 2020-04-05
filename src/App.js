@@ -4,6 +4,7 @@ import Greeting from "./Greeting";
 import Name from "./Name";
 import Text from "./Text";
 import Footer from "./footer";
+import Button from "./button";
 class App extends Component {
   state = {
     /*  task: [
@@ -12,15 +13,17 @@ class App extends Component {
       { id: 3, text: "wypirdalaj" }
     ]*/
     text1: "witam",
-    text2: "żegnam"
+    text2: "żegnam",
+    name: "Samochody"
   };
 
   render() {
     return (
       <>
         <Greeting greeting={this.state.text2} />,
-        <Name />
+        <Name n={this.state.name} />
         <Text />
+        <Button />
         <Footer />
       </>
     );
