@@ -3,6 +3,7 @@ import "./App.css";
 import Greeting from "./Greeting";
 import Name from "./Name";
 import Text from "./Text";
+import Footer from "./footer";
 class App extends Component {
   state = {
     /*  task: [
@@ -20,6 +21,7 @@ class App extends Component {
         <Greeting greeting={this.state.text2} />,
         <Name />
         <Text />
+        <Footer />
       </>
     );
   }
