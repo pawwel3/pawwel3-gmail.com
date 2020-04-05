@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Greeting from "./Greeting";
+import Name from "./Name";
+import Text from "./Text";
+class App extends Component {
+  state = {
+    /*  task: [
+      { id: 1, text: "witam" },
+      { id: 2, text: "żegnam" },
+      { id: 3, text: "wypirdalaj" }
+    ]*/
+    text1: "witam",
+    text2: "żegnam"
+  };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    return (
+      <>
+        <Greeting greeting={this.state.text2} />,
+        <Name />
+        <Text />
+      </>
+    );
+  }
 }
 
 export default App;
